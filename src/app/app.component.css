@@ -1,0 +1,49 @@
+/* Styles for the Angular Material toolbar */
+.mat-toolbar {
+  background-color: whitesmoke; /* Bright pink color */
+  color: black; /* Text color */
+  font-size: 25px;
+  height: 80px;
+}
+
+.custom-hover{
+  margin-bottom: 0.2rem;
+}
+
+.mat-toolbar span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
+
+.mat-toolbar button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+  color: white; /* Button text color */
+}
+.auth {
+  padding: 10px;
+}
+
+.mat-toolbar button {
+  padding: 0 10px;
+  color: black;
+  font-size: 18px;
+}
+
+.second-spacer {
+  flex: 2 auto;
+}
+.spacer {
+  flex: 0.1 auto;
+}
+
+
+.mat-toolbar button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+
+.mat-toolbar button.active {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter semi-transparent white for active button */
+  border-radius: 4px; /* Rounded corners for active button */
+  color: #FF4081; /* Pink text color for active button */
+}

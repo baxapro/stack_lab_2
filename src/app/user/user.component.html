@@ -1,0 +1,26 @@
+<div class="container-cs">
+  <h2 class="title">Users List</h2>
+  <div class="custom-hover"></div>
+  <table>
+    <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Actions</th> <!-- Добавляем столбец для действий -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.age }}</td>
+      <td>
+        <button (click)="editUser(user._id)">Edit</button>
+        <button (click)="deleteUser(user._id)">Delete</button>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
