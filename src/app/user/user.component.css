@@ -1,63 +1,47 @@
 .container-cs {
-  margin-top: 50px; /* Отступ сверху */
-  margin-left: auto; /* Выравнивание по левому краю */
-  margin-right: auto; /* Выравнивание по правому краю */
-  align-items: center;
-  width: 80%;
+  margin: 20px;
 }
 
-table {
-  width: 100%;
+.title {
+  margin-left: 750px;
+}
+
+.custom-table {
   border-collapse: collapse;
-  margin-top: 20px; /* Добавляем отступ между таблицей и заголовком */
+  width: 100%;
 }
-.title{
-  font-size: 70px;
-  text-align: center;
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid darkorange;
+  padding: 8px;
+  text-align: left;
 }
-th {
-  background-color: dodgerblue;
+
+.custom-table th {
+  background-color: darkorange;
   color: white;
-  padding: 12px; /* Увеличиваем отступ внутри ячейки */
-  text-align: center;
 }
 
-td {
-  border-bottom: 1px solid #ddd;
-  padding: 12px; /* Увеличиваем отступ внутри ячейки */
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
-}
-
-button {
-  background-color: dodgerblue;
+.custom-button-edit{
+  background-color: blue;
+  color: white;
   border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
-  margin: 5px;
+}
+.custom-button-delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 15px;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-td {
-  text-align: center;
-}
-.custom-hover{
-  margin-top: 50px;
-  margin-bottom: 50px;
+.custom-button-edit:hover,
+.custom-button-delete:hover {
+  background-color: #ff8c00; /* изменение цвета при наведении */
 }

@@ -1,7 +1,7 @@
 <div class="container-cs">
   <h2 class="title">Users List</h2>
   <div class="custom-hover"></div>
-  <table>
+  <table class="custom-table">
     <thead>
     <tr>
       <th>Username</th>
@@ -16,9 +16,8 @@
       <td>{{ user.email }}</td>
       <td>{{ user.age }}</td>
       <td>
-        <button (click)="editUser(user._id)">Edit</button>
-        <button (click)="deleteUser(user._id)">Delete</button>
-
+        <button class="custom-button-edit" (click)="editUser(user._id)">Edit</button>
+        <button class="custom-button-delete" (click)="deleteUser(user._id)">Delete</button>
       </td>
     </tr>
     </tbody>

@@ -18,13 +18,10 @@ export class LoginComponent {
     this.userService.login(this.username, this.password)
       .subscribe(
         (response) => {
-          // Handle successful login response
           console.log('Login successful', response);
-          // Redirect to /tasks on successful login
-          this.router.navigate(['/tasks']);
+          this.router.navigate(['/user-list']);
         },
         (error) => {
-          // Handle login error
           console.error('Login error', error);
           if (error.error && error.error.message) {
             this.errorMessage = error.error.message;
